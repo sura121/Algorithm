@@ -1,52 +1,41 @@
 package sura.org.algorithm;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * 순열? 경우의수?....
+ */
 public class SunClasses {
     public static void main(String[] args) {
 
         int answer = 0;
-        int hap = 0;
-        int gop = 0;
 
         String[][] clothes =
             {
                 {"yellow_hat", "headgear"},
-                {"blue_sunglasses", "eyewear"},
-                {"green_turban", "headgear"}
+                {"blue_sunglasses", "face"},
+                {"smoky_makeup", "face"}
              };
 
-        HashMap<String, ArrayList<String>> clothesMap = new HashMap<>();
+        HashMap<String, Integer> clothesMap = new HashMap<>();
 
-        for(String[] cloth : clothes) {
-
-            if(clothesMap.containsKey(cloth[1])) {
-                ArrayList<String> categoryList = clothesMap.get(cloth[1]);
-                categoryList.add(cloth[0]);
-                clothesMap.put(cloth[1],categoryList);
-            } else {
-                ArrayList<String> classfy = new ArrayList<>();
-                classfy.add(cloth[0]);
-                clothesMap.put(cloth[1],classfy);
-            }
+        for(String[] clothe : clothes) {
+            clothesMap.compute(clothe[1],(k,v)-> v==null ? 1 : v+1);
         }
 
-        for(Map.Entry<String, ArrayList<String>> entry : clothesMap.entrySet()) {
-            System.out.println(Arrays.asList(entry));
-            hap = hap + entry.getValue().size();
+        for(Map.Entry<String, Integer> calc : clothesMap.entrySet()) {
 
-            if(gop > 0 ) {
-                gop = gop * entry.getValue().size();
-            } else {
-                gop = entry.getValue().size();
+            if(answer==0) {
+                answer = calc.getValue()+1;
+                continue;
             }
-
+            answer = answer * (calc.getValue()+1);
         }
 
-        answer = hap + gop;
+        answer = answer-1;
+
+        System.out.println(answer);
 
     }
 
