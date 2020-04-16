@@ -3,7 +3,7 @@ package sura.org.algorithm;
 import java.util.ArrayList;
 
 public class ArrayMultiply {
-
+	
     public static void main(String[] args) {
         int[] A = {1,4,2};
         int[] B = {5,4,4};
@@ -22,6 +22,7 @@ public class ArrayMultiply {
          *
          * 전체 경우의수 length * length
          */
-        
+      System.out.println("aa");
+
     }
 }
