@@ -27,10 +27,9 @@ public class Progress {
          
          for(int work : progresses) {
         	 Double decimalDay = (double) (100-work) / speeds[index];
-        	 System.out.println(decimalDay);
         	 
         	 int day = (int) Math.ceil(decimalDay );
-        	 System.out.println("index : " + day);
+
         	 complete.add(day);
         	 index ++;        
          }

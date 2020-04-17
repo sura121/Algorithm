@@ -24,7 +24,7 @@ public class Hindex {
 
         System.out.println(Arrays.toString(cities));
 
-        int index = 1;
+        int index = 0;
 
         for(Integer citi : cities) {
 
