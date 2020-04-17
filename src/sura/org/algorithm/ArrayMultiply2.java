@@ -1,6 +1,7 @@
 package sura.org.algorithm;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrayMultiply2 {
 	
@@ -22,7 +23,23 @@ public class ArrayMultiply2 {
 	         *
 	         * 전체 경우의수 length * length
 	         */
-	      System.out.println("aabb");
+	        
+	        Arrays.sort(A);
+	        Arrays.sort(B);
+	        
+	        System.out.println(Arrays.toString(A));
+	        System.out.println(Arrays.toString(B));
+	        
+	        int arraySize = A.length;
+	        int sum = 0;
+	        for(int i=0; i<arraySize; i++) {
+	        	sum +=A[i] * B[(arraySize - i)-1];
+	        	System.out.println(sum);
+	        }
+	        
+	        
+	        System.out.println(sum);
+	     
 
 	    }
 }
