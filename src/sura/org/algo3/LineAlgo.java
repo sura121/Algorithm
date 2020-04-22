@@ -21,7 +21,8 @@ public class LineAlgo {
 	      }
 	      System.out.println(totalCase);
 	      return answer;
-	  }
+	}
+	
 	
 	/*
 	 * 1,2,3
