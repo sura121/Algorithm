@@ -20,9 +20,19 @@ public class LineAlgo {
 	    	  totalCase = totalCase*i;
 	      }
 	      System.out.println(totalCase);
+	      
+	      int[][] calcSpace = new int[totalCase][n];
+	      
+	      /*
+	       * XXX: 고민할 많은듯....
+	       * 모든 탐색을 통해 배열을 만드는 것보다 k 번째의 배열값을 추측하는게 더 빠를듯...
+	       * 0번 index 값이 무슨값이 되는지 파악이 중
+	       */
+	      for(int j=0; j<totalCase; j++) {
+	    	  
+	      }
 	      return answer;
-	}
-	
+	  }
 	
 	/*
 	 * 1,2,3
