@@ -2,15 +2,9 @@ package sura.org.kakao;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
-
-import javax.print.attribute.IntegerSyntax;
 
 public class BadUser {
 	
@@ -70,25 +64,29 @@ public class BadUser {
         
         ArrayList<Integer> result_arr = new ArrayList<>();
         
-        for (String user : user_id) {
-        	
-        	int inner_index = 0;
-        	
-			for(List<Integer> num : bandPostion) {
-				
-				StringBuilder builder = new StringBuilder(user);
-//				StringBuffer builder = new StringBuffer(user);
-//				builder.setCharAt(index, ch);
-				
-				num.stream()
-				.forEach(x -> System.out.print(builder.setCharAt(x, '*')));
-				
-//				System.out.println(result_list.toString());
-				
-			}
+        System.out.println(bandPostion.toString());
+		for(List<Integer> num : bandPostion) {
+			
+			StringBuilder str = new StringBuilder();
+			
+			List<List<String>> r2 = num.stream()
+			.map(x->Arrays.stream(user_id)
+					.filter(y-> y.length() > x) //XXX:word position filter exception.					
+					.map(y -> {
+						System.out.println(y);
+						str.setLength(0);
+						str.append(y);
+						str.setCharAt(x, '*');
+						y = str.toString();
+												
+						return y;
+						})
+					.collect(Collectors.toList())
+					)
+			.collect(Collectors.toList());
+			
+			System.out.println("num start : " + r2.toString());
 		}
-//        System.out.println("System value : " + bandPostion.toString());
-        
         return answer;
     }
 
