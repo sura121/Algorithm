@@ -1,10 +1,8 @@
 package sura.org.kakao;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class BadUser {
 	
@@ -12,7 +10,7 @@ public class BadUser {
 		BadUser sol = new BadUser();
 		
 		String[] user_id = {"frodo", "fradi", "crodo", "abc123", "frodoc"};
-		String[] banned_id = {"fr*d*", "abc1**"};
+		String[] banned_id = {"*rodo", "*rodo", "******"};
 		sol.solution(user_id, banned_id);
 	}
 	
@@ -62,31 +60,88 @@ public class BadUser {
         	
         }
         
-        ArrayList<Integer> result_arr = new ArrayList<>();
+        System.out.println("band Position Array : " + bandPostion.toString());
+        ArrayList<String> result_arr = new ArrayList<>();
         
-        System.out.println(bandPostion.toString());
-		for(List<Integer> num : bandPostion) {
-			
-			StringBuilder str = new StringBuilder();
-			
-			List<List<String>> r2 = num.stream()
-			.map(x->Arrays.stream(user_id)
-					.filter(y-> y.length() > x) //XXX:word position filter exception.					
-					.map(y -> {
-						System.out.println(y);
-						str.setLength(0);
-						str.append(y);
-						str.setCharAt(x, '*');
-						y = str.toString();
-												
-						return y;
-						})
-					.collect(Collectors.toList())
-					)
-			.collect(Collectors.toList());
-			
-			System.out.println("num start : " + r2.toString());
-		}
+        StringBuilder str = new StringBuilder();
+        
+        for(List<Integer> num_arr : bandPostion) {
+        	//[],[];
+        	String[] clone_arr = user_id.clone();
+        	
+        	int clone_index = 0;
+        	
+        	for(String user_name : clone_arr) {
+        		
+        		boolean skip_value = false;
+        		//stringbuilder init
+        		str.setLength(0);
+        		
+        		str.append(user_name);
+        		
+        		for(int pos_num : num_arr) {
+        			
+//        			System.out.println("user length : " + user_name.length() + " position num : "  + pos_num);
+        			if(user_name.length() <= pos_num ) {
+//        				System.out.println("in??");
+        				clone_index++;
+        				skip_value = true;
+        				break;
+        			}
+        			
+        			str.setCharAt(pos_num, '*');	
+        		}
+        		
+        		if(skip_value) {
+        			continue;
+        		}
+//        		System.out.println("sIndex value : " + clone_index);
+        		clone_arr[clone_index] = str.toString();
+        		if(clone_arr[clone_index].contains("*")) {
+        			result_arr.add(str.toString());
+        		}
+        		clone_index++;
+        		
+        	}
+        	
+        }
+        
+//    	System.out.println(result_arr.toString());
+    	
+    	/*
+    	 * final step 
+    	 * banned id 와 같은 문자열을 찾아서 count 
+    	 * 경우의수로 계산....
+    	 */
+    	
+    	ArrayList<Integer> count_arr = new ArrayList<>();
+    	
+    	for(String ban_name : banned_id) {
+    		
+    		int count = 0;
+    		for(String result_name : result_arr) {
+    			
+//    			System.out.println("banned id : " + ban_name + " make ban name : " + result_name);
+    			if( ban_name.equals(result_name) ) {
+    				count++;
+    			}
+    			
+    		}
+    		
+			if(count != 0) {
+				count_arr.add(count);
+			}
+    	}
+    	
+    	System.out.println(count_arr.toString());
+    	
+    	Integer an = count_arr.stream()
+    		.filter(x -> x > 0)
+    		.sorted()
+    		.reduce(1, (a,b)->a*b);
+    	
+    	answer = an;
+        
         return answer;
     }
 
