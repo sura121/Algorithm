@@ -2,6 +2,7 @@ package sura.org.kakao;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class SnowTown {
 	
@@ -30,22 +31,41 @@ public class SnowTown {
 	        	total_room.put(i,1);
 	        }
 	        
-	        answer = new long[(int) k];
+	        answer = new long[room_number.length];
 	        
 	        int index = 0;
 	        
 	        for (long l : room_number) {
-				
-	        	if( total_room.get(l) == 1 ) {
 	        	
-	        		answer[index] = total_room.get(l);
+	        	System.out.println("key Value : " + index);
+				
+	        	if( total_room.get(l) == 1 ) {	        		  
 	        		
 	        		total_room.put(l, 0);
-	        	
+	        		
+	        		answer[index] = l;
+	        		
+	        		index++;
+	        		
 	        		continue;
 	        		
 	        	}
 	        	
+	        	/*
+	        	 * 남은방의 최소값을 찾아야됨
+	        	 */
+	        	
+	        	Long re = total_room.entrySet().stream()
+	        			.filter(s -> s.getKey() > l && s.getValue() == 1)
+	        			.min(Map.Entry.comparingByKey())
+	        			.get()
+	        			.getKey();
+	        	
+	        	total_room.put(re, 0);
+	        	
+	        	answer[index] = re;	
+	        	
+	        	index++;
 	        	
 			}
 	        
