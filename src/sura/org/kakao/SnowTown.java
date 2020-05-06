@@ -28,7 +28,7 @@ public class SnowTown {
 	        HashMap<Long,Integer> total_room = new HashMap<>();
 	        
 	        for(long i = 1; i <= k; i++) {
-	        	total_room.put(i,1);
+	        	total_room.put(i,0);
 	        }
 	        
 	        answer = new long[room_number.length];
@@ -39,9 +39,9 @@ public class SnowTown {
 	        	
 	        	System.out.println("key Value : " + index);
 				
-	        	if( total_room.get(l) == 1 ) {	        		  
+	        	if( total_room.get(l) == 0 ) {	        		  
 	        		
-	        		total_room.put(l, 0);
+	        		total_room.put(l,(int) l+1);
 	        		
 	        		answer[index] = l;
 	        		
@@ -55,15 +55,29 @@ public class SnowTown {
 	        	 * 남은방의 최소값을 찾아야됨
 	        	 */
 	        	
-	        	Long re = total_room.entrySet().stream()
-	        			.filter(s -> s.getKey() > l && s.getValue() == 1)
-	        			.min(Map.Entry.comparingByKey())
-	        			.get()
-	        			.getKey();
+	        	Long re_room = null;
 	        	
-	        	total_room.put(re, 0);
+	        	/*
+	        	 * TODO : 노드 탐색을 위한 HashMap 탐색을 어떻게 해야될지 생각이 필요하다..
+	        	 */
+	        	for(long t = total_room.get(l); t<=k; t++) {
+	        		
+	        		if ( total_room.get(t) == 0) {
+	        			re_room = t;
+	        			total_room.put(t,0);
+	        			break;
+	        		}
+	        	}
 	        	
-	        	answer[index] = re;	
+//	        	Long re = total_room.entrySet().stream()
+//	        			.filter(s -> s.getKey() > l && s.getValue() == 1)
+//	        			.min(Map.Entry.comparingByKey())
+//	        			.get()
+//	        			.getKey();
+//	        	
+//	        	total_room.put(re, 0);
+//	        	
+	        	answer[index] = re_room;	
 	        	
 	        	index++;
 	        	
