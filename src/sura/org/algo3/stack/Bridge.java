@@ -1,4 +1,4 @@
-package sura.org.algo3;
+package sura.org.algo3.stack;
 
 import java.util.*;
 

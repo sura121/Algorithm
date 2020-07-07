@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="756e9e0b-358b-4518-b044-f26c5242c73c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.externalToolBuilders/New_Builder.launch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" afterPath="$PROJECT_DIR$/.project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algorithm/ArrayMultiply.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algorithm/ArrayMultiply.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algorithm/Hindex.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algorithm/Hindex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algorithm/Progress.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algorithm/Progress.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sura/org/kakao/StringPress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sura/org/kakao/StringPress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algo3/Bridge$Truck.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algo3/Bridge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/sura/org/algo3/Transmit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sura/org/algo3/Bridge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sura/org/algo3/stack/Bridge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sura/org/algo3/Transmit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sura/org/algo3/stack/Transmit.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,28 +27,40 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/Bridge.java">
+        <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/stack/Bridge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/Transmit.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-139">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+            <state relative-caret-position="-109">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sura/org/algorithm/StringSorting.java">
+        <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/stack/Transmit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="-36">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/stack/FunctionDev.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="82" column="24" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sura/org/algorithm/Progress.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,6 +168,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/idea.vmoptions" />
         <option value="$PROJECT_DIR$/src/sura/org/algo3/Bridge.java" />
         <option value="$PROJECT_DIR$/src/sura/org/algo3/Transmit.java" />
+        <option value="$PROJECT_DIR$/src/sura/org/algo3/FuctionDev.java" />
+        <option value="$PROJECT_DIR$/src/sura/org/algo3/stack/FuctionDev.java" />
+        <option value="$PROJECT_DIR$/src/sura/org/algo3/stack/FunctionDev.java" />
       </list>
     </option>
   </component>
@@ -196,6 +209,21 @@
               <item name="org" type="462c0819:PsiDirectoryNode" />
               <item name="algo3" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="algo3" type="462c0819:PsiDirectoryNode" />
+              <item name="stack" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Algorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Algorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -227,7 +255,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Transmit">
+  <component name="RunManager" selected="Application.FunctionDev">
     <configuration name="ArrayMultiply" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sura.org.algorithm.ArrayMultiply" />
       <module name="Algorithm" />
@@ -242,11 +270,24 @@
       </method>
     </configuration>
     <configuration name="Bridge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sura.org.algo3.Bridge" />
+      <option name="MAIN_CLASS_NAME" value="sura.org.algo3.stack.Bridge" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sura.org.algo3.*" />
+          <option name="PATTERN" value="sura.org.algo3.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FunctionDev" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sura.org.algo3.stack.FunctionDev" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sura.org.algo3.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -267,25 +308,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringCopression" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sura.org.algorithm.StringCopression" />
-      <module name="Algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sura.org.algorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Transmit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sura.org.algo3.Transmit" />
+      <option name="MAIN_CLASS_NAME" value="sura.org.algo3.stack.Transmit" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="sura.org.algo3.*" />
+          <option name="PATTERN" value="sura.org.algo3.stack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -295,11 +323,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FunctionDev" />
         <item itemvalue="Application.Transmit" />
         <item itemvalue="Application.Bridge" />
         <item itemvalue="Application.ArrayMultiply" />
         <item itemvalue="Application.Hindex" />
-        <item itemvalue="Application.StringCopression" />
       </list>
     </recent_temporary>
   </component>
@@ -343,16 +371,15 @@
       <workItem from="1589521457127" duration="69000" />
       <workItem from="1589522120076" duration="58000" />
       <workItem from="1589522209042" duration="996000" />
-      <workItem from="1594005561222" duration="11985000" />
+      <workItem from="1594005561222" duration="17206000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84226000" />
+    <option name="totallyTimeSpent" value="89447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16239317" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -414,13 +441,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sura/org/algorithm/Progress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -570,13 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/Bridge.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home/src.zip!/java/util/Stack.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -584,10 +597,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/Transmit.java">
+    <entry file="file://$PROJECT_DIR$/src/sura/org/algorithm/Progress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-139">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="19" />
+        <state relative-caret-position="118">
+          <caret line="27" column="37" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/stack/Bridge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-109">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/stack/Transmit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-36">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sura/org/algo3/stack/FunctionDev.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="82" column="24" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="24" />
         </state>
       </provider>
     </entry>
