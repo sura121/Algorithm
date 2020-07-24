@@ -65,54 +65,6 @@ public class Printer {
             }
 
         }
-//
-//        int cur_number = 0;
-//        int prev_number = 0;
-//
-//        List<Integer> work_arr = new ArrayList<>();
-//        Stack<Integer> st = new Stack<>();
-//
-//        for (int num : priorities) {
-//            st.add(num);
-//        }
-//
-//        int idx = 0;
-//
-//        /**
-//         * stack
-//         * [9,1,1,1]
-//         * A, B, C, D
-//         * 2 1 3 2
-//         * 0
-//         * 0,1
-//         * 2,0,1
-//         * 2,3,0,1
-//         */
-//
-//        while(!st.isEmpty()) {
-//
-//            cur_number = st.pop();
-//
-//            if(idx == 0 ){
-//                work_arr.add(idx);
-//                prev_number = cur_number;
-//                idx++;
-//                continue;
-//            }
-//
-//            if(cur_number >=prev_number) {
-//                work_arr.add(0,idx);
-//            } else {
-//                work_arr.add(idx);
-//            }
-//
-//            idx++;
-//
-//        }
-//
-//
-//        System.out.println(work_arr.toString());
-
         return answer;
     }
 
