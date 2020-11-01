@@ -1,5 +1,8 @@
 package sura.org.algo3.exhaustive;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrimeNumber {
 
     public static void main(String[] args) {
@@ -13,6 +16,8 @@ public class PrimeNumber {
     public int solution(String number) {
 
         int answer = 0;
+
+        List<Integer> combine_number = new ArrayList<>();
 
         numberPrime(number);
 
@@ -29,7 +34,7 @@ public class PrimeNumber {
 
         for (int i = 0; i < split_arr_size; i++) {
 
-
+            numberPrime(number);
         }
 
         return numbers;
