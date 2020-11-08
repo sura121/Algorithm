@@ -30,13 +30,22 @@ public class ComplexTime3 {
 
             System.out.println("index p loop : " + p);
 
+            /**
+             * pSum , nSum
+             * pSum 과 nSum n(0) n(2longN); loop 한번으로 처리가 가능한가...
+             * p, n 시작점
+             *
+             * stack,
+             *
+             * total sum, p_sum 에 대해서 빼는 로직으로 loop 중복을 제거 한다...
+             */
+
             int nSum = 0;
             int pSum = 0;
 
             for(int i = 0; i < length; i++){
 
                 if(i < p) {
-
                     nSum +=A[i];
                 } else {
                     pSum +=A[i];

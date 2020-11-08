@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="756e9e0b-358b-4518-b044-f26c5242c73c" name="Default Changelist" comment="" />
+    <list default="true" id="756e9e0b-358b-4518-b044-f26c5242c73c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/sura/org/codility/ComplexTime3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sura/org/codility/ComplexTime3.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sura/org/codility/ComplexTime3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+            <state relative-caret-position="60">
+              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -383,12 +385,12 @@
       <workItem from="1595998832369" duration="3000" />
       <workItem from="1602295293541" duration="6136000" />
       <workItem from="1602303503453" duration="10587000" />
-      <workItem from="1604143064394" duration="8655000" />
+      <workItem from="1604143064394" duration="10258000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138334000" />
+    <option name="totallyTimeSpent" value="139937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -821,8 +823,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sura/org/codility/ComplexTime3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="28" column="41" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
+        <state relative-caret-position="60">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
         </state>
       </provider>
     </entry>
